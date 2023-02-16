@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kooking-it</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+       <div class="cicle"></div>
+       <header>
+        <a class="logo" href="index.html">KOOKING IT</a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       </header>
+       <div class="content">
+        <div class="textBox">
+            <h2>Spit your nose!</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a href="#"  title="You will not regret">Learn more</a>
+        </div>
+        <div class="imgBox">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/food1.webp" alt=""> </div>
+                  <div class="swiper-slide"><img src="images/foto2.webp" alt=""> </div>
+                  <div class="swiper-slide"><img src="images/food3.webp" alt=""> </div>
+                  <div class="swiper-slide"><img src="images/food4.webp" alt=""> </div>
+                  <div class="swiper-slide"><img src="images/food5.webp" alt=""> </div>
+                  <div class="swiper-slide"><img src="images/food6.webp" alt=""> </div>
+                  <div class="swiper-slide"><img src="images/food7.webp" alt=""> </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            
+        </div>
+       </div>
+       <ul class="sci">
+        <li><a href="#" title="Keep following us"><img src="images/facebook.png"  alt=""></a></li>
+        <li><a href="#"  title="Keep following us"><img src="images/twitter.png"  alt=""></a></li>
+        <li><a href="#"  title="Keep following us"><img src="images/instagram.png" alt=""></a></li>
+       </ul>
+    </section>
+    
+             <table>
+              <caption> Special price</caption>
+              
+              <tr>
+                <th>Description</th>
+                <th>Cout de l'article</th>
+                <th>Cout total</th>
+              </tr>
+              <tr>
+                <td>Pizza jambon fromage</td>
+                <td>Pizza au vegetale</td>
+                <td>Pizza peperoni</td>
+              </tr>
+              <tr>
+                <td>Pizza jambon fromage</td>
+                <td>Pizza au vegetale</td>
+                <td>Pizza peperoni</td>
+              </tr>
+              <tr>
+                <td>Pizza jambon fromage</td>
+                <td>Pizza au vegetale</td>
+                <td>Pizza peperoni</td>
+              </tr>
+             </table>
+    
+    <footer>
+        &copy; Kooking-it all right reserved,
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          loop:true,
+        });
+        function toggleMenu() {
+        const menuToggle= document.querySelector('.toggle');
+        const navigation= document.querySelector('.navigation');
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    }
+      </script>
+</body>
+</html>
